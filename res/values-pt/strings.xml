@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="email">nbatista.apps@gmail.com</string>
+    <string name="app_name">Sensor Monitor</string>
+    <string name="author">Nídia Batista</string>
+    <string name="save_description">Guardar dados para o ficheiro</string>
+    <string name="play_description">Iniciar</string>
+    <string name="pause_description">Pausa</string>
+    <string name="error">Erro</string>
+    <string name="samples">Amostras</string>
+    <string name="file_saved">O ficheiro foi guardado com sucesso para</string>
+    <string name="error_file_saved">Ocorreu um erro. O ficheiro não foi guardado.</string>
+    <string name="error_file_saved2">O ficheiro não foi guardado. Verifique se o nome está correcto.</string>
+    <string name="sensor_data">Dados do sensor</string>
+    <string name="settings">Definições</string>
+    <string name="help">Ajuda</string>
+    <string name="give_feedback">Dar feedback</string>
+    <string name="about">Sobre</string>
+    <string name="more">Mais</string>
+    <string name="illumination">Iluminação</string>
+    <string name="air_pressure">Pressão</string>
+    <string name="copyright">Copyright &#169;</string>
+    <string name="all_rights">Todos os direitos reservados.</string>
+    <string name="sensor_details">Detalhes do sensor</string>
+    <string name="saving_file">Aguardar o ficheiro&#8230;</string>
+    <string name="enter_filename">Insira o nome do ficheiro</string>
+    <string name="file_exists">O ficheiro já existe</string>
+    <string name="replace">Substituir o ficheiro?</string>
+
+    <!-- Sensor names -->
+
+    <string name="acceleration">Aceleração</string>
+    <string name="magnetic_field">Campo magnético</string>
+    <string name="light">Luz</string>
+    <string name="gyroscope">Giroscópio</string>
+    <string name="rotation_vector">Vector de rotação</string>
+    <string name="gravity">Gravidade</string>
+    <string name="linear_acceleration">Aceleração linear</string>
+    <string name="ambient_temperature">Temperatura</string>
+    <string name="pressure">Pressão</string>
+    <string name="relative_humidity">Humidade relativa</string>
+
+    <!-- Help -->
+    <string name="main_menu">Menu principal</string>
+    <string name="monitor">Monitor</string>
+
+    <!-- Sensor description -->
+
+    <string name="acceleration_description">Mede a força de aceleração em m/s&#178; que é aplicada a um dispositivo em todos os 3 eixos físicos (x, y, e z), incluindo a força da gravidade.</string>
+    <string name="magnetic_field_description">Mede o campo magnético para todos os 3 eixos físicos (x, y, z) em &#181;T.</string>
+    <string name="light_description">Mede o nível de luz ambiente (iluminação) em lx.</string>
+    <string name="gyroscope_description">Mede a taxa de rotação de um dispositivo em rad/s em torno de cada um dos 3 eixos físicos (x, y, e z).</string>
+    <string name="rotation_vector_description">Measures the orientation of a device by providing the three elements of the device\'s rotation vector.</string>
+    <string name="gravity_description">Measures the force of gravity in m/s&#178; that is applied to a device on all three physical axes (x, y, z).</string>
+    <string name="linear_acceleration_description">Measures the acceleration force in m/s&#178; that is applied to a device on all three physical axes (x, y, and z), excluding the force of gravity.</string>
+    <string name="ambient_temperature_description">Measures the ambient room temperature in degrees Celsius (&#176;C).</string>
+    <string name="pressure_description">Measures the ambient air pressure in hPa or mbar.</string>
+    <string name="relative_humidity_description">Measures the relative ambient humidity in percent (&#37;).</string>
+
+    <!-- Settings -->
+
+    <string name="sensor_info">Sensor info</string>
+    <string name="plot_samples">X-axis range</string>
+    <string name="events">samples</string>
+    <string name="milliseconds">milliseconds</string>
+    <string name="delay_time">Sampling rate</string>
+    <string name="save_samples">Save index</string>
+    <string name="save_samples_summary">Show sensor event index in data file</string>
+    <string name="save_timestamp">Save timestamp</string>
+    <string name="save_timestamp_summary">Show sensor event timestamp in data file</string>
+    <string name="monitor_settings">General</string>
+    <string name="file_settings">Data file</string>
+    <string name="range_error">Insert a value between 5 and 5000</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="disclaimer_text">The author shall not, under any circumstances, be liable for any indirect, incidental, consequential, special or exemplary 
+        damages arising out of or in connection with the use of this application, whether based on breach of service, tort 
+        (including negligence, product liability or otherwise), or any other pecuniary loss, whether or not the author has been advised of the possibility 
+        of such damages. Under no circumstances shall the author be liable for any amount. And you will be solely responsible for any damage that results from the 
+        use of this application including, but not limited to, any damage to your computer system or loss of data.</string>
+    <string name="about_description1">Sensor Monitor is designed to monitor your Android device sensors.</string>
+    <string name="about_description2">This app detects all available sensors on your device, gives visual feedback of the sensor\'s values in real-time and allows you to save the acquired data into a file for post-processing.</string>
+
+    
+    <string name="feedback1">To leave feedback to help improve this app, report bugs or even suggest new features, send a message to this e-mail:</string>
+    <string name="feedback2">I\'ll be happy to incorporate your suggestions in future releases.</string>
+    
+    <!-- Main help -->
+
+    <string name="about1">To start monitoring a sensor\'s activity, select a sensor from the Main menu.</string>
+    <string name="about2">Android-powered devices have built-in sensors that can be divided into 3 categories.</string>
+    <string name="sensors">Sensors</string>
+    <string name="motion_sensors">Motion sensors</string>
+    <string name="environmental_sensors">Environmental sensors</string>
+    <string name="position_sensors">Position sensors</string>
+    <string name="motion_info">Useful for monitoring movement, such as tilt, shake, rotation or swing.</string>
+    <string name="position_info">Useful for determining the physical position in the world\'s frame of reference.</string>
+    <string name="environmental_info">They monitor relative ambient humidity, illuminance, ambient pressure and temperature.</string>
+    <string name="disabled_info">If a sensor is disabled, your device doesn\'t support it.</string>
+    <string name="more_info">To view sensor\'s capabilities and description, click the info button.</string>
+    <string name="instruction2">To begin acquiring and visualizing sensor data, click Play.</string>
+    <string name="instruction4">To pause acquisition, click Pause. To continue, click Play again.</string>
+    <string name="instruction5">To clear all data, click Reset. All unsaved data will be lost.</string>
+    <string name="instruction6">To save the sensor data into a file, click Save. You\'ll be notified of the file location.</string>
+    <string name="settings_instruction1">Allows you to configure visualization parameters and customize the data file.</string>
+    <string name="settings_instruction2">Sets the maximum number of samples in the X axis range. Value should be between 5 and 5000. Default is 100 samples.</string>
+    <string name="settings_instruction3">Sets the rate of events. This is only a hint to the system, events may be received faster or slower than the specified rate. Default is UI which corresponds to a delay of 60 milliseconds.</string>
+    <string name="settings_instruction4">Adds a new column to the data text file with the index of the sensor event.</string>
+    <string name="settings_instruction5">Adds a new column to the data text file with the timestamp of the sensor event.</string>
+
+    <!-- Info text -->
+
+    <string name="about_sensor">About the sensor</string>
+    <string name="how_it_works">How it works</string>
+    <string name="name">Name</string>
+    <string name="vendor">Vendor</string>
+    <string name="version">Version</string>
+    <string name="power">Power</string>
+    <string name="resolution">Resolution</string>
+    <string name="axis_device_description">Coordinate system (relative to a device) that\'s used by the Sensor API.</string>
+    <string name="axis_globe_description">Coordinate system used by the rotation vector sensor.</string>
+
+    <!-- Accelerometer Sensor -->
+
+    <string name="acc_description1">An acceleration sensor measures the acceleration force applied to the device in m/s&#178;, including the force of gravity.</string>
+    <string name="acc_description2">It uses a standard 3-axis coordinate system (x, y, z) to express data values.</string>
+    <string name="acc_description3">The accelerometer is a good sensor to use if you are monitoring device motion.</string>
+
+    <!-- Gravity Sensor -->
+
+    <string name="gravity_description1">The gravity sensor measures the acceleration force applied to the device in m/s&#178;.</string>
+    <string name="gravity_description2">It provides a three dimensional vector (x, y, z) indicating the direction and magnitude of gravity.</string>
+    <string name="gravity_description3">Common uses include motion detection like shake or tilt.</string>
+
+    <!-- Gyroscope Sensor -->
+
+    <string name="gyro_description1">The gyroscope measures the rate or rotation in rad/s around a device\'s x, y, and z axis.</string>
+    <string name="gyro_description2">Rotation is positive in the counter-clockwise direction; that is, an observer looking from some positive location on the x, y or z axis at a device positioned on the origin would report positive rotation if the device appeared to be rotating counter clockwise.</string>
+    <string name="gyro_description3">Can be used for rotation detection (spin, turn, etc.)</string>
+
+    <!-- Humidity Sensor -->
+
+    <string name="hum_description1">Measures the relative ambient humidity in percent (&#37;).</string>
+    <string name="hum_description2">This sensor is hardware-based and is available only if a device manufacturer has built them into a device.</string>
+
+    <!-- Light Sensor -->
+
+    <string name="light_description1">Measures the ambient light level (illumination) in lx.</string>
+    <string name="light_description2">Most device manufacturers use this sensor to control screen brightness.</string>
+
+    <!-- Linear acceleration Sensor -->
+
+    <string name="lin_acc_description1">The linear acceleration sensor provides you with a three-dimensional vector representing acceleration along each device axis, excluding gravity.</string>
+    <string name="lin_acc_description2">The sensor coordinate system is the same as the one used by the acceleration sensor, as are the units of measure (m/s&#178;).</string>
+    <string name="lin_acc_description3">You typically use this sensor when you want to obtain acceleration data without the influence of gravity. For example, you could use this sensor to see how fast your car is going.</string>
+
+    <!-- Magnetometer Sensor -->
+
+    <string name="mag_description1">The geomagnetic field sensor lets you monitor changes in the earth\'s magnetic field.</string>
+    <string name="mag_description2">This sensor provides raw field strength data (in &#181;T) for each of the three coordinate axes.</string>
+    <string name="mag_description3">Common uses include the creation of a compass.</string>
+
+    <!-- Pressure Sensor -->
+
+    <string name="pressure_description1">Measures the ambient air pressure in hPa.</string>
+    <string name="pressure_description2">This sensor is hardware-based and is available only if a device manufacturer has built them into a device.</string>
+    <string name="pressure_description3">Can be used to monitor air pressure changes.</string>
+
+    <!-- Rotation Sensor -->
+
+    <string name="rot_description1">The rotation vector represents the orientation of the device as a combination of an angle and an axis, in which the device has rotated through an angle θ around an axis (x, y, or z).</string>
+    <string name="rot_description2">The three elements of the rotation vector are equal to the last three components of a unit quaternion (cos(&#920;/2), x*sin(&#920;/2), y*sin(&#920;/2), z*sin(&#920;/2)). Elements of the rotation vector are unitless. The reference coordinate system is defined as a direct orthonormal basis.</string>
+    <string name="rot_description3">Common uses are motion detection and rotation detection.</string>
+
+    <!-- Temperature Sensor -->
+
+    <string name="temp_description1">Measures the ambient room temperature in degrees Celsius (&#176;C). It returns a single sensor value for each data event.</string>
+    <string name="temp_description2">This sensor is hardware-based and is available only if a device manufacturer has built them into a device.</string>
+    <string name="temp_description3">Can be used for monitoring air temperatures.</string>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/monitor_settings" >
+        <EditTextPreference
+            android:defaultValue="100"
+            android:inputType="number"
+            android:key="xAxisRange"
+            android:title="@string/plot_samples" >
+        </EditTextPreference>
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/delayTime"
+            android:entryValues="@array/delayTimeValues"
+            android:key="delayTime"
+            android:title="@string/delay_time" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/file_settings" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="saveIndex"
+            android:summary="@string/save_samples_summary"
+            android:title="@string/save_samples" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="saveTimestamp"
+            android:summary="@string/save_timestamp_summary"
+            android:title="@string/save_timestamp" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

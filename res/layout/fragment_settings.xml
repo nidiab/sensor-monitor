@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/settingsDescription1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/settings_instruction1" />
+
+        <TextView
+            android:id="@+id/numberSamplesTitle"
+            style="@style/Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/plot_samples" />
+
+        <TextView
+            android:id="@+id/samplesDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/settings_instruction2" />
+
+        <TextView
+            android:id="@+id/delayTimeTitle"
+            style="@style/Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delay_time" />
+
+        <TextView
+            android:id="@+id/delayTimeDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/settings_instruction3" />
+
+        <TextView
+            android:id="@+id/saveSamplesTitle"
+            style="@style/Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_samples" />
+
+        <TextView
+            android:id="@+id/saveSamplesDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/settings_instruction4" />
+
+        <TextView
+            android:id="@+id/saveSamplesTimestampTitle"
+            style="@style/Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_timestamp" />
+
+        <TextView
+            android:id="@+id/saveTimestampDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/settings_instruction5" />
+    </LinearLayout>
+
+</ScrollView>

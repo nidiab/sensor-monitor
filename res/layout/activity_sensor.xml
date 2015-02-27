@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/chart"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/controls"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="-50dp" >
+
+        <ImageButton
+            android:id="@+id/play"
+            style="@style/ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/play_description"
+            android:src="@drawable/ic_action_play" />
+
+        <ImageButton
+            android:id="@+id/pause"
+            style="@style/ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/pause_description"
+            android:src="@drawable/ic_action_pause"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/reset"
+            style="@style/ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/play"
+            android:contentDescription="@string/play_description"
+            android:src="@drawable/ic_action_refresh" />
+
+        <ImageButton
+            android:id="@+id/save"
+            style="@style/ImageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/reset"
+            android:contentDescription="@string/save_description"
+            android:src="@drawable/ic_action_save" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

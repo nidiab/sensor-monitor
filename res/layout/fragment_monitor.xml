@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/playInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/play"
+                style="@style/ImageButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/play_description"
+                android:src="@drawable/ic_action_play" />
+
+            <TextView
+                android:id="@+id/howToDescription1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/play"
+                android:text="@string/instruction2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pauseInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/pause"
+                style="@style/ImageButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/pause_description"
+                android:src="@drawable/ic_action_pause" />
+
+            <TextView
+                android:id="@+id/howToDescription3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/pause"
+                android:text="@string/instruction4" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/refreshInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/reset"
+                style="@style/ImageButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/pause_description"
+                android:src="@drawable/ic_action_refresh" />
+
+            <TextView
+                android:id="@+id/howToDescription4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/reset"
+                android:text="@string/instruction5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/saveInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/save"
+                style="@style/ImageButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/save_description"
+                android:src="@drawable/ic_action_save" />
+
+            <TextView
+                android:id="@+id/howToDescription5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/save"
+                android:text="@string/instruction6" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/instructionsLayout2"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/info_button"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_alignParentLeft="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/about"
+                android:src="@drawable/ic_action_about" />
+
+            <TextView
+                android:id="@+id/instructionsDescription1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/info_button"
+                android:text="@string/more_info" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

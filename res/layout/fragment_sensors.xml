@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/introLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/about1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/about1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/instructionsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/instructionsDescription2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/pressure_button"
+                android:text="@string/disabled_info" />
+
+            <Button
+                android:id="@+id/pressure_button"
+                style="@style/EnvironmentalButton"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/pressure_description"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="@string/pressure"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sensorsTitle"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/sensors" />
+
+        <RelativeLayout
+            android:id="@+id/motionLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/about2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/about2" />
+
+            <TextView
+                android:id="@+id/motionTitle"
+                style="@style/Title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about2"
+                android:text="@string/motion_sensors" />
+
+            <TextView
+                android:id="@+id/motionDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/motionTitle"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/acc_button"
+                android:text="@string/motion_info" />
+
+            <Button
+                android:id="@+id/acc_button"
+                style="@style/MotionButton"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/motionTitle"
+                android:contentDescription="@string/acceleration_description"
+                android:text="@string/acceleration"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/environmentalLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/environmentalTitle"
+                style="@style/Title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/environmental_sensors" />
+
+            <TextView
+                android:id="@+id/environmentalDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/environmentalTitle"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/light_button"
+                android:text="@string/environmental_info" />
+
+            <Button
+                android:id="@+id/light_button"
+                style="@style/EnvironmentalButton"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/environmentalTitle"
+                android:contentDescription="@string/light_description"
+                android:padding="10dp"
+                android:text="@string/light"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/positionLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/positionTitle"
+                style="@style/Title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/position_sensors" />
+
+            <TextView
+                android:id="@+id/positionDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/positionTitle"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/mag_button"
+                android:text="@string/position_info" />
+
+            <Button
+                android:id="@+id/mag_button"
+                style="@style/PositionButton"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/positionTitle"
+                android:contentDescription="@string/magnetic_field_description"
+                android:text="@string/magnetic_field"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

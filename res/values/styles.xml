@@ -1,0 +1,68 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MotionButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:background">@drawable/motion_button</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="EnvironmentalButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/environmental_button</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="PositionButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/position_button</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="ImageButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/motion_button</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Title" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomDialogThemeTransparent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

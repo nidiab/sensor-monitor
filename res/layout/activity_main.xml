@@ -1,0 +1,155 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_buttons"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true"   
+    android:stretchColumns="*" >
+
+    <TableRow
+        android:id="@+id/TableRow01"
+        android:layout_width="0px"
+        android:orientation="vertical"
+        android:layout_height="0px"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/acc_button"
+            style="@style/MotionButton"
+            android:tag="1"
+            android:contentDescription="@string/acceleration_description"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="selectSensor"
+            android:text="@string/acceleration" />
+
+        <Button
+            android:id="@+id/grav_button"
+            style="@style/MotionButton"
+            android:tag="9"
+            android:contentDescription="@string/gravity_description"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="selectSensor"
+            android:text="@string/gravity" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/gyro_button"
+            style="@style/MotionButton"
+            android:tag="4"
+            android:contentDescription="@string/gyroscope_description"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="selectSensor"
+            android:text="@string/gyroscope" />
+
+        <Button
+            android:id="@+id/lin_acc_button"
+            style="@style/MotionButton"
+            android:tag="10"
+            android:contentDescription="@string/linear_acceleration_description"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="selectSensor"
+            android:text="@string/linear_acceleration" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/rot_vec_button"
+            style="@style/MotionButton"
+            android:tag="11"
+            android:contentDescription="@string/rotation_vector_description"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="selectSensor"
+            android:text="@string/rotation_vector" />
+
+        <Button
+            android:id="@+id/mag_button"
+            style="@style/PositionButton"
+            android:tag="2"
+            android:contentDescription="@string/magnetic_field_description"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="selectSensor"
+            android:text="@string/magnetic_field" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/light_button"
+            style="@style/EnvironmentalButton"
+            android:tag="5"
+            android:contentDescription="@string/light_description"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="selectSensor"
+            android:text="@string/light" />
+
+        <Button
+            android:id="@+id/pressure_button"
+            style="@style/EnvironmentalButton"
+            android:tag="6"
+            android:contentDescription="@string/pressure_description"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="selectSensor"
+            android:text="@string/pressure" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0px"
+        android:orientation="vertical"
+        android:layout_height="0px"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/hum_button"
+            style="@style/EnvironmentalButton"
+            android:tag="12"
+            android:contentDescription="@string/relative_humidity_description"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="selectSensor"
+            android:text="@string/relative_humidity" />
+
+        <Button
+            android:id="@+id/amb_temp_button"
+            style="@style/EnvironmentalButton"
+            android:tag="13"
+            android:contentDescription="@string/ambient_temperature_description"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:onClick="selectSensor"
+            android:text="@string/ambient_temperature" />
+    </TableRow>
+
+</TableLayout>

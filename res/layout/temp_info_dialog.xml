@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical" >
+
+        <include layout="@layout/sensor_generic_info" />
+
+        <TextView
+            android:id="@+id/howToTitle"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/how_it_works" />
+
+        <RelativeLayout
+            android:id="@+id/howToLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/howToDescription1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/temp_description1" />
+
+            <TextView
+                android:id="@+id/howToDescription2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/howToDescription1"
+                android:layout_marginBottom="5dp"
+                android:text="@string/temp_description2" />
+
+            <TextView
+                android:id="@+id/howToDescription3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/howToDescription2"
+                android:text="@string/temp_description3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
